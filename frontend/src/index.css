@@ -21,28 +21,36 @@ body {
   flex-direction: column; 
   align-items: center;
   justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  
+  
   padding: 1rem;
+}
+.full-black-shadow {
+  width: 100%;              /* w-full */
+  background-color: rgba(15, 188, 145, 0.397);  /* bg-black */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  border-radius: 10px;
 }
 
 /* --- Header / Logo --- */
 .head-logo {
   text-decoration: none;
   width: 180px;
-  height: 60px;
-  background-color: #60A5FA;
+  height: 40px;
+  background-color: #03152cb3;
   border-radius: 20px;
   color: #1a1a1a;
   text-align: center;
-  line-height: 60px;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+  line-height: 40px;
+  font-weight: 60;
+  top: 0;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 10px;
+  position: fixed;
 }
 .head-logo:hover {
-  color: #6e0a0a;
-  background-color: #3b82f6;
+  color: #64ff7b;
+  background-color: #1f2a38;
 }
 
 /* --- Header Bar Links --- */
@@ -52,6 +60,11 @@ body {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  background-color: #1f2a38;
+  border-radius: 10px;
+  width: 90%;
+  
+  
 }
 
 .header_bar .link {
@@ -61,6 +74,7 @@ body {
   padding: 0.5rem 1rem;
   color: #2dad17;
   transition: background-color 0.3s, color 0.3s;
+  width: 150px;
 }
 .header_bar .link:hover {
   background-color: #1f2a38;
@@ -163,6 +177,7 @@ h1 {
   .header_bar {
     flex-direction: column;
     gap: 0.5rem;
+    margin-left: 10px;
   }
 
   button,
@@ -170,8 +185,16 @@ h1 {
   .input-login-pass {
     max-width: 100%;
   }
+  .full-black-shadow{
+    max-width: 100vw;
+
+  }
 
   body {
+    margin: 0;
     padding: 0.5rem;
+    overflow-x: hidden;  /* ikuraho scrolling iburyo/ibumoso */
+    max-width: 100vw;    /* ntiyarenza screen width */
+    box-sizing: border-box;
   }
 }

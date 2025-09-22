@@ -91,7 +91,7 @@ function NavbarItems() {
       {user ? (
         <button
           onClick={handleLogout}
-          className="px-3 py-1 rounded bg-red-500 text-white hover:bg-red-600 text-sm"
+          className="px-3 py-1 rounded bg-red-500 text-white hover:bg-red-600 text-sm "
         >
           🔓 Logout ({user.name || user.phone})
         </button>
@@ -114,10 +114,10 @@ function App() {
         <OrderProvider>
           <Router>
             {/* Navbar */}
-            <div className="w-full bg-white shadow-md">
+            <div className="full-black-shadow">
               <div className="container mx-auto flex justify-between items-center p-4">
                 <h1 className="text-xl font-bold text-blue-700">
-                  <Link to="/" className='head-logo'>Gasogi city bar</Link>
+                  <Link to="/" className='head-logo'>Gasogi center bar</Link>
                 </h1>
                 <NavbarItems />
               </div>
